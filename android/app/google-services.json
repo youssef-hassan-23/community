@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "253726337825",
+    "project_id": "mica-community-3798e",
+    "storage_bucket": "mica-community-3798e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:253726337825:android:1548c1ba97a3e1665fec60",
+        "android_client_info": {
+          "package_name": "com.example.mica_community"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKC7KNOrdYVVPAb8udBTqYr4AJ-f_l0Do"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:253726337825:android:b3a9e6045626c3d95fec60",
+        "android_client_info": {
+          "package_name": "com.example.mica_community_2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKC7KNOrdYVVPAb8udBTqYr4AJ-f_l0Do"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
