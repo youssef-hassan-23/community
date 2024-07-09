@@ -3,7 +3,7 @@ import 'package:flutter/widgets.dart';
 import '../utils/get_user_info.dart';
 
 class UserProvider with ChangeNotifier {
-  bool primaryModeTheme = true;
+  bool primaryModeTheme = false;
   String userName = '';
   String userImage = '';
 

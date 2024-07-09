@@ -24,14 +24,14 @@ class _MediaState extends State<Media> {
         scrollDirection: Axis.horizontal,
         children: [
           MediaPicker(
-              icon: Icon(Icons.camera_alt_outlined, size: 30),
+              icon: Icon(Icons.camera_alt_outlined, size: 30,color: Colors.blueGrey,),
               title: "Camera",
               onTap: () {
                 Provider.of<PostImageProvider>(context, listen: false)
                     .selectedCamera();
               }),
           MediaPicker(
-              icon: Icon(Icons.photo_outlined, size: 30),
+              icon: Icon(Icons.photo_outlined, size: 30,color: Colors.blueGrey,),
               title: "Gallary",
               onTap: () {
                 Provider.of<PostImageProvider>(context, listen: false)

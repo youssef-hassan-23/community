@@ -16,7 +16,7 @@ class ImageWidget extends StatelessWidget {
       padding: EdgeInsets.all(15),
       margin: EdgeInsets.symmetric(horizontal: 5),
       decoration: BoxDecoration(
-          border: Border.all(color: Colors.grey),
+          border: Border.all(color: Colors.blueGrey),
           borderRadius: BorderRadius.circular(15)),
       child: Image.file(fit: BoxFit.fill, height: 50, width: 65, path),
     );

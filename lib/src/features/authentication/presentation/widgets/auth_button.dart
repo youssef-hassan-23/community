@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-
-import '../../../../core/constants/colors.dart';
-
 class AuthButton extends StatelessWidget {
   final void Function()? onTap;
   final Widget child;
@@ -23,7 +20,7 @@ class AuthButton extends StatelessWidget {
             shape: const RoundedRectangleBorder(
               borderRadius: BorderRadius.all(Radius.circular(4)),
             ),
-            color: AppColor.blueColor,
+            color: Colors.blueGrey,
           ),
           child: child),
     );

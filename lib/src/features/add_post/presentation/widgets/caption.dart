@@ -1,8 +1,6 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
-import '../../../../core/constants/colors.dart';
 import '../../../../core/providers/user_provider.dart';
 
 class Caption extends StatelessWidget {
@@ -31,12 +29,7 @@ class Caption extends StatelessWidget {
             decoration: InputDecoration(
               border: InputBorder.none,
               hintText: "Add caption....",
-              hintStyle: TextStyle(
-                fontSize: 20,
-                color: context.watch<UserProvider>().primaryModeTheme
-                    ? AppColor.greyColor
-                    : AppColor.primaryColor,
-              ),
+              hintStyle: TextStyle(fontSize: 20),
             ),
           ),
         ),

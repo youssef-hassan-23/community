@@ -1,9 +1,7 @@
 import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:provider/provider.dart';
-import '../../../../core/providers/user_provider.dart';
 import '../../../../core/utils/pick_image.dart';
 import '../provider/sign_up_provider.dart';
 import '../widgets/login_or_sign_up_text_button.dart';
@@ -42,7 +40,7 @@ class _SignupScreenState extends State<SignupScreen> {
       });
     } else {
       setState(() {
-        _image = File("assets/l60Hf.png");
+        _image = File("assets/images/l60Hf.png");
       });
     }
   }
@@ -64,15 +62,9 @@ class _SignupScreenState extends State<SignupScreen> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   // mica dark or light
-                  context.watch<UserProvider>().primaryModeTheme
-                      ? Image.asset(
-                          "assets/MICA Light.jpg",
-                          height: 100,
-                        )
-                      : Image.asset(
-                          "assets/MICA Dark.jpg",
-                          height: 100,
-                        ),
+                Text("MICA",
+                    style: TextStyle(
+                        fontFamily: 'DancingScript', color: Colors.blueGrey,fontSize: 60)),
                   const SizedBox(height: 64),
                   Stack(
                     children: [

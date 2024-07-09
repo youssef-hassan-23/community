@@ -1,8 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
-
-import '../../../../core/constants/colors.dart';
-import '../../../../core/providers/user_provider.dart';
 
 class LoginOrSignUp extends StatelessWidget {
   final String title;
@@ -31,9 +27,7 @@ class LoginOrSignUp extends StatelessWidget {
             child: Text(title,
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
-                    color: context.watch<UserProvider>().primaryModeTheme
-                        ? AppColor.blueColor
-                        : null)),
+                    color:Colors.blueGrey)),
           ),
         ),
       ],

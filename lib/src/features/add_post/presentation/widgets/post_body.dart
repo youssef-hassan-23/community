@@ -38,7 +38,7 @@ class _PostBodyState extends State<PostBody> {
                     Provider.of<PagesProvider>(context, listen: false)
                         .changePage(0);
                   },
-                  icon: Icon(Icons.close, color: Colors.blue, size: 30)),
+                  icon: Icon(Icons.close, color: Colors.blueGrey, size: 30)),
               Spacer(),
               MaterialButton(
                 onPressed: () async {
@@ -54,8 +54,8 @@ class _PostBodyState extends State<PostBody> {
                     showSnackBar(context, "choose your photos first");
                   }
                 },
-                color: Colors.blue,
-                child: Text("post", style: TextStyle(fontSize: 18)),
+                color: Colors.blueGrey,
+                child: Text("post", style: TextStyle(fontSize: 18,color: Colors.white)),
                 shape: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(50),
                     borderSide: BorderSide.none),

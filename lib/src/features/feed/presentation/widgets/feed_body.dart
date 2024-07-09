@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../../../core/providers/user_provider.dart';
 import '../../../../core/utils/format_date.dart';
 import '../bloc/feed_bloc.dart';
 import 'full_screen_image_page.dart';
@@ -17,15 +15,11 @@ class FeedBody extends StatelessWidget {
         SliverAppBar(
           floating: true,
           titleSpacing: 0,
-          title: context.watch<UserProvider>().primaryModeTheme
-              ? Image.asset(
-                  "assets/MICA Light.jpg",
-                  height: 75,
-                )
-              : Image.asset(
-                  "assets/MICA Dark.jpg",
-                  height: 75,
-                ),
+          title: Text("MICA",
+              style: TextStyle(
+                  fontFamily: 'DancingScript',
+                  color: Colors.blueGrey,
+                  fontSize: 50)),
           actions: [
             IconButton(onPressed: () {}, icon: Icon(Icons.info_outline_rounded))
           ],

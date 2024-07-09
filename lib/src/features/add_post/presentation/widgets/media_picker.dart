@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
-import '../../../../core/constants/colors.dart';
-import '../../../../core/providers/user_provider.dart';
 
 class MediaPicker extends StatelessWidget {
   final void Function()? onTap;
@@ -24,19 +21,15 @@ class MediaPicker extends StatelessWidget {
         padding: EdgeInsets.all(15),
         decoration: BoxDecoration(
             border: Border.all(
-                color: context.watch<UserProvider>().primaryModeTheme
-                    ? AppColor.secondaryColor
-                    : AppColor.primaryColor),
+                color: Colors.blueGrey),
             borderRadius: BorderRadius.circular(15)),
         child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
           icon,
           Text(title,
               style: TextStyle(
                 fontSize: 17,
-                fontWeight: FontWeight.w300,
-                color: context.watch<UserProvider>().primaryModeTheme
-                    ? AppColor.secondaryColor
-                    : AppColor.primaryColor,
+                fontWeight: FontWeight.bold,
+                color:Colors.blueGrey
               ))
         ]),
       ),

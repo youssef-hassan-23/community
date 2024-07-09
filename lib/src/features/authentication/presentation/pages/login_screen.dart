@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '../../../../core/providers/user_provider.dart';
 import '../provider/login_provider.dart';
 import '../widgets/login_or_sign_up_text_button.dart';
 import '../widgets/auth_button.dart';
@@ -42,9 +41,9 @@ class _LoginScreenState extends State<LoginScreen> {
               children: [
                 Flexible(flex: 2, child: Container()),
                 // logo
-                context.watch<UserProvider>().primaryModeTheme
-                    ? Image.asset("assets/MICA Light.jpg", height: 100)
-                    : Image.asset("assets/MICA Dark.jpg", height: 100),
+                Text("MICA",
+                    style: TextStyle(
+                        fontFamily: 'DancingScript', color: Colors.blueGrey,fontSize: 60)),
                 const SizedBox(height: 64),
                 // fields
                 TextFieldInput(
